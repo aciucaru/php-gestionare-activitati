@@ -114,13 +114,13 @@ if($managerSesiune->existaUtilizatorLogat())
 
                 <div class="property-edit-collapsible-content-column">
                     <div class="property-edit-row-content inline-block-item">
-                        <label class="input-label property-name">Parola</label>
+                        <label class="input-label property-name">Parola noua</label>
                         <input type="password" name="parola-modificata1" placeholder="Parola" class="property-value">
                     <div>
 
                     <div class="property-edit-row-content inline-block-item">
                         <label class="input-label property-name">Repeta parola</label>
-                        <input type="password" name="parola-modificata2" placeholder="Parola" class="property-value">
+                        <input type="password" name="parola-modificata2" placeholder="Repeta parola" class="property-value">
                         <div class="col-separator"></div>
                         <input type="submit" name="submit-modificare-parola" value="Aplica modificare" class="property-edit-button"/>
                     <div>
