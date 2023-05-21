@@ -60,7 +60,7 @@ if($managerSesiune->existaUtilizatorLogat())
                 <table class="tabel-activitati">
                     <thead class="tabel-activitati-header">
                         <tr>
-                            <th scope="col" class="coloana-data-timp celula-tabel">Data & ora</th>
+                            <th scope="col" class="coloana-data-timp celula-tabel">Data</th>
                             <th scope="col" class="coloana-departament celula-tabel">Departament</th>
                             <th scope="col" class="coloana-categorie celula-tabel">Categorie</th>
                             <th scope="col" class="coloana-ore celula-tabel">Ore</th>
@@ -110,8 +110,7 @@ if($managerSesiune->existaUtilizatorLogat())
                     <label class="input-descriere-label">Descriere</label>
                     <textarea class="input-descriere" name="descriere" rows="3" placeholder="Descriere" ></textarea>
 
-                    <input type="submit" name="submit-activitate" value="Adauga activitate"
-                    class="submit-activitate"/>
+                    <input type="submit" name="submit-activitate" value="Adauga activitate" class="submit-activitate"/>
                 </div>
             </form>
         </div>

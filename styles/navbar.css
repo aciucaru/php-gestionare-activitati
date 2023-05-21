@@ -2,9 +2,8 @@
 {
     display: flex;
     flex-flow: row nowrap;
+    justify-content: space-between;
     align-items: flex-start;
-    justify-content: flex-start;
-    align-content: flex-start;
     gap: 0px;
 
     padding-left: 10px;
@@ -15,9 +14,34 @@
 
     border-radius: 10px;
     border: solid 1px hsl(240, 5%, 30%);
+
     background-image: linear-gradient(hsl(236, 6%, 40%), hsl(235, 7%, 30%));
 
     box-shadow: 2px 2px 20px 2px hsla(0, 0%, 10%, 0.5);
+}
+
+.navbar-left-side
+{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0px;
+
+    padding: 0px;
+    margin: 0px;
+}
+
+.navbar-right-side
+{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 0px;
+
+    padding: 0px;
+    margin: 0px;
 }
 
 .navbar-item
@@ -66,22 +90,23 @@
 .dropdown-menu
 {
     visibility: hidden;
+    display: none;
     opacity: 0;
     position: absolute;
-    transition: all 0.5s ease;
-    margin-top: 1rem;
-    display: none;
 
-    padding: 10px;
     margin: 0px;
-    margin-top: 10px;
+    margin-top: 1rem;
+    margin-left: -5rem;
+    margin-right: 1rem;
+    padding: 10px;
 
     border-radius: 10px;
     border: solid 1px hsl(240, 5%, 30%);
     background-image: linear-gradient(hsl(236, 6%, 40%), hsl(235, 7%, 30%));
 
     box-shadow: 2px 2px 20px 2px hsla(0, 0%, 10%, 0.5);
-    transition-duration: 1s;
+
+    transition: all 1s ease;
 }
 
 .navbar-item:hover > .dropdown-menu,

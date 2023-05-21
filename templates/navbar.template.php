@@ -12,50 +12,54 @@ $managerSesiune = ManagerSesiune::iaSingleton();
 </style>
 
 <nav class="navbar" role="navigation">
-    <?php if($managerSesiune->iaRolUtilizator() === RolUtilizator::Obisnuit): ?>
-        <div class="navbar-item">
-            <a class="navbar-link" href="./activitati.php">Activitati</a>
-        </div>
-    <?php endif ?>
+    <div class="navbar-left-side">
+        <?php if($managerSesiune->iaRolUtilizator() === RolUtilizator::Obisnuit): ?>
+            <div class="navbar-item">
+                <a class="navbar-link" href="./activitati.php">Activitati</a>
+            </div>
+        <?php endif ?>
 
-    <?php if($managerSesiune->iaRolUtilizator() === RolUtilizator::Admin): ?>
-        <div class="navbar-item">
-            <a class="navbar-link" href="./activitati.php">Activitati</a>
-        </div>
+        <?php if($managerSesiune->iaRolUtilizator() === RolUtilizator::Admin): ?>
+            <div class="navbar-item">
+                <a class="navbar-link" href="./activitati.php">Activitati</a>
+            </div>
 
-        <div class="navbar-item">
-            <a class="navbar-link" href="./activitati.php">Departamente/Categorii</a>
-        </div>
-    <?php endif ?>
+            <div class="navbar-item">
+                <a class="navbar-link" href="./activitati.php">Departamente/Categorii</a>
+            </div>
+        <?php endif ?>
+    </div>
 
-    <?php if($managerSesiune->existaUtilizatorLogat()): ?>
-        <div class="navbar-item">
-            <a class="navbar-link" href="#">
-                <img src="./styles/user-solid.svg" class="user-item-image">
-            </a>
+    <div class="navbar-right-side">
+        <?php if($managerSesiune->existaUtilizatorLogat()): ?>
+            <div class="navbar-item">
+                <a class="navbar-link" href="#">
+                    <img src="./styles/user-solid.svg" class="user-item-image">
+                </a>
 
-            <ul class="dropdown-menu">
-                <li class="dropdown-item">
-                    <a class="navbar-link" href="./setari-cont.php">
-                        Setari cont
-                    </a>
-                </li>
+                <ul class="dropdown-menu">
+                    <li class="dropdown-item">
+                        <a class="navbar-link" href="./setari-cont.php">
+                            Setari cont
+                        </a>
+                    </li>
 
-                <li class="dropdown-item">
-                    <a class="navbar-link" href="./logout.php">
-                        Logout
-                    </a>
-                </li>
-            </ul>
-        </div>
-    <?php else: ?>
-        <div class="navbar-item ">
-            <a class="navbar-link" href="./login.php">Login</a>
-        </div>
+                    <li class="dropdown-item">
+                        <a class="navbar-link" href="./logout.php">
+                            Logout
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        <?php else: ?>
+            <div class="navbar-item ">
+                <a class="navbar-link" href="./login.php">Login</a>
+            </div>
 
-        <div class="navbar-item">
-            <a class="navbar-link" href="./register.php">Inregistrare</a>
-        </div>
-    <?php endif ?>
+            <div class="navbar-item">
+                <a class="navbar-link" href="./register.php">Inregistrare</a>
+            </div>
+        <?php endif ?>
+    </div>
 
 </nav>
