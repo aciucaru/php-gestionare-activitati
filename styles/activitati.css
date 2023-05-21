@@ -1,0 +1,176 @@
+.container-activitati
+{
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-content: flex-start;
+    gap: 20px;
+
+    padding: 0px;
+    margin: 0px;
+}
+
+.container-tabel
+{
+    width: 100%;
+}
+
+.tabel-activitati
+{
+    width: 100%;
+    color: hsl(0, 0%, 80%);
+    border: none;
+}
+
+.tabel-activitati-header
+{
+    display: block;
+    width: 100%;
+
+    border-radius: 10px 10px 0px 0px;
+    background-image: linear-gradient(hsl(227, 15%, 15%) 30%, hsl(230, 15%, 10%));
+
+    box-shadow: 2px 2px 20px 2px hsla(0, 0%, 10%, 0.5);
+}
+
+.tabel-activitati-body
+{
+    display: block;
+    height: 400px;
+    overflow-y: scroll;
+
+    border-radius: 0px 0px 10px 10px;
+}
+
+.rand-par-tabel
+{
+    padding: 10px;
+    margin: 0px;
+
+    /* border-radius: 10px;
+    border: solid 1px hsl(240, 5%, 30%); */
+    border: none;
+    background-image: linear-gradient(
+                                        90deg, 
+                                        hsla(234, 10%, 30%, 0.0), 
+                                        hsla(234, 10%, 30%, 1.0) 20%,
+                                        hsla(234, 10%, 30%, 1.0) 80%, 
+                                        hsla(234, 10%, 30%, 0.0)
+                                    );
+
+    box-shadow: 2px 2px 20px 2px hsla(0, 0%, 10%, 0.5);
+    transition-duration: 1s;
+}
+
+.rand-impar-tabel
+{
+    padding: 10px;
+    margin: 0px;
+
+    /* border-radius: 10px;
+    border: solid 1px hsl(240, 5%, 30%); */
+    border: none;
+    background-image: linear-gradient(
+                                        90deg, 
+                                        hsla(230, 15%, 10%, 0.0), 
+                                        hsla(230, 15%, 10%, 1.0) 20%,
+                                        hsla(230, 15%, 10%, 1.0) 80%, 
+                                        hsla(230, 15%, 10%, 0.0)
+                                    );
+
+    box-shadow: 2px 2px 20px 2px hsla(0, 0%, 10%, 0.5);
+    transition-duration: 1s;
+}
+
+.rand-par-tabel:hover, .rand-impar-tabel:hover
+{
+    /* z-index: 100; */
+    background-image: linear-gradient(-30deg, hsl(219, 20%, 40%), hsl(219, 20%, 33%));
+    box-shadow: 2px 2px 20px 2px hsla(0, 0%, 90%, 0.5);
+}
+
+.coloana-data-timp { width: 150px;     border: none;}
+.coloana-departament { width: 200px;     border: none;}
+.coloana-categorie { width: 400px;     border: none;}
+.coloana-ore { width: 50px;     border: none;}
+.coloana-descriere { width: 400px;     border: none;}
+
+.celula-tabel
+{
+    padding: 10px;
+    margin: 0px;
+}
+
+/* stiluri pentru formulare */
+.form-activitati
+{
+    display: grid;
+    grid-template-columns: 180px 300px 100px 150px;
+    grid-template-rows: 30px 30px 30px;
+    align-items: center;
+    justify-content: start;
+    align-content: start;
+    gap: 10px;
+
+    padding: 0px;
+    margin: 0px;
+}
+
+.input-data-label
+{
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.input-data
+{
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.input-categorie-label
+{
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.input-categorie
+{
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+.input-ore-label
+{
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+}
+
+.input-ore
+{
+    width: 100px;
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+}
+
+.input-descriere-label
+{
+    grid-column: 1 / 4;
+    grid-row: 3 / 4;
+}
+
+.input-descriere
+{
+    grid-column: 1 / 4;
+    grid-row: 4 / 7;
+}
+
+.submit-activitate
+{
+    grid-column: 4 / 5;
+    grid-row: 2 / 3;
+}
+
+
