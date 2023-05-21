@@ -14,7 +14,7 @@ class ManagerInputActivitati
 {
     private static $instanta = null;
 
-    private static ?Logger $logger;
+    private static ?Logger $logger = null;
 
     private function __construct()
     {
